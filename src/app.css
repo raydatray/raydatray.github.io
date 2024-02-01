@@ -20,44 +20,50 @@
 
 body {
     color: black;
-    margin-bottom: 3em;
     background-color: #A7C7E7;
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
     font-family: 'Montserrat-Bold';
     font-size: large;
 }
 
-h1, h2, h3{
+h1, h2{
     margin-bottom: 0.35rem;
 }
   
-h1{
+h1 {
     font-size: 2.5rem;
     line-height: 3rem;
 }
   
-h2{
+h2 {
     font-size: 2rem;
 }
   
-h3{
+h3 {
     font-size: 1.75rem;
 }
   
-h4{
-    font-size: 1.35rem;
+h4 {
+    font-family: 'Montserrat-Regular';
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+h5 {
+    font-family: 'Montserrat-Regular';
+    font-size: 1.15rem;
 }
   
-p{
+p {
     font-family: 'Montserrat-Regular';
     font-weight: medium;
     font-size: 1rem;
 }
   
-span{
+span {
     font-family: 'Montserrat-SemiBold';
     font-size: 1rem;
 }
