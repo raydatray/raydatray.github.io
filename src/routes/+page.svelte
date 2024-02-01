@@ -2,6 +2,8 @@
     import Project from './project.svelte';
     import "../app.css";
 
+    //import myPDF from '$lib/2024_Internship_Resume V3.pdf';
+
     import {IconBrandLinkedin, IconBrandGithub, IconMail, IconDownload, IconBrandRust, IconBrandSvelte, IconCoffee, IconBrandCarbon, IconBrandPython, IconBrandTypescript} from '@tabler/icons-svelte'
 
     const projectOne = {
@@ -9,32 +11,32 @@
         shortHeader: "Java powered hotel asset management app",
         description: "",
         date: "November 2023",
-        link: "ooga booga",
-        imageURL: "url here...."
+        link: "",
+        imageURL: ""
     }
 
     const projectTwo = {
         projectName: "PyroBot3",
         shortHeader: "Python powered lego fire extinguishing robot",
         date: "November 2023",
-        link: "ooga booga",
-        imageURL: "src/static/images/PyroBot3.png"
+        link: "",
+        imageURL: "/PyroBot3.png"
     }
 
     const projectThree = {
         projectName: "RustyChip8",
         shortHeader: "Cross platform Chip8 emulator built in Rust",
         date: "",
-        link: "ooga booga",
-        imageURL: "url here..."
+        link: "",
+        imageURL: ""
     }
 
     const projectFour = {
         projectName: "Othello ",
         shortHeader: "Othello with  (Also my first foray into programming!)",
         date: "May 2022",
-        link: "ooga booga",
-        imageURL: "url here..."
+        link: "",
+        imageURL: ""
     }
 </script>
 <div class = 'flex flex-col items-center'>
@@ -57,7 +59,7 @@
             <a href = 'https://github.com/raydatray'>
                 <IconBrandGithub size = {36}/>
             </a>
-            <a href = 'raydatray@gmail.com'>
+            <a href= 'mailto: raydatray@gmail.com'>
                 <IconMail size = {36}/>
             </a>
         </div>
@@ -75,7 +77,7 @@
 
         <br/>
         
-        <a href = 'src/static/file/2024_Internship_Resume V3.pdf'>
+        <a href = "/Resume.pdf">
             <div class = "grid grid-flow-col auto-cols-max gap-3 justify-start">
                 <IconDownload/>
                 <p>Download resume</p>
