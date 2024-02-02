@@ -50,10 +50,10 @@
 
             <div class = 'buffer'></div>
 
-            <div class = 'links flex flex-col items-end justify-between h-full'>
+            <div class = 'links flex flex-col items-start sm:items-end justify-between h-full'>
                 <div>
-                    <p class = 'text-right font-semibold'>I break things, lots of things</p>
-                    <div class = 'grid grid-flow-col auto-cols-max gap-1 justify-end'>
+                    <p class = 'text-right sm:text-left font-semibold'>I break things, lots of things</p>
+                    <div class = 'grid grid-flow-col auto-cols-max gap-1 justify-start sm:justify-end '>
                         <a href = 'https://www.linkedin.com/in/raydatray/'>
                             <IconBrandLinkedin size = {36} stroke = {1.5}/>
                         </a>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <p class = "inline-block align-bottom text-right text-xs align-bottom">Built with<span>❤️</span>using <span class = "text-xs">Svelte</span></p>
+                <p class = "inline-block align-bottom text-left sm:text-right text-xs align-bottom">Built with<span>❤️</span>using <span class = "text-xs">Svelte</span></p>
             </div>
 
             <div class = 'work'>
@@ -219,7 +219,8 @@
     @media (max-width: 900px){
         .container {
             grid-template-areas:
-                'header header links'
+                'header header header'
+                'links links links'
                 'work work work'
                 'education education education'
                 'projects projects projects'
@@ -230,7 +231,8 @@
 
         .header {
           border: 1px solid black;
-          border-right: none;
+          border-bottom: none;
+          padding-bottom: 0;
         }
       
         .buffer{
@@ -238,8 +240,9 @@
         }
 
         .links {
-            border-left: none;
+            border: 1px solid black;
+            border-top: none;
+            padding-top: 1em;
         }
     }
-
 </style>
