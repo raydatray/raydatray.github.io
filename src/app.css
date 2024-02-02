@@ -57,7 +57,7 @@ h5 {
     font-size: 1.15rem;
 }
   
-p {
+p, li {
     font-family: 'Montserrat-Regular';
     font-weight: medium;
     font-size: 1rem;
@@ -67,5 +67,6 @@ span {
     font-family: 'Montserrat-SemiBold';
     font-size: 1rem;
 }
+
   
   
