@@ -116,10 +116,23 @@
                 <br/>
 
                 <b>Your goals in Tech? </b>
-                <p>I am looking to experience as many domains </p>
+                <p>Still figuring that out, I hope through my internships I will soon have a better answer</p>
+                <br/>
+                <p>I do have a keen interest in:</p>
+                <ul>
+                    <li>- Cloud infrastruture</li>
+                    <li>- Embedded development</li>
+                    <li>- Concurrent progrmaming</li>
+                </ul>
                 <br/>
 
-                <b></b>
+                <b>Learning anyhting new?</b>
+                <p>I'm learning Rust and Svelte, and how to build high performing services with them</p>
+                <br/>
+
+                <b>Anyting in the pipeline?</b>
+                <p>PCPartpicker, but for home baristas (soon™)</p>
+                <br/>
 
                 <b>Any hobbies?</b>
                 <ul>
@@ -133,14 +146,12 @@
 
             <div class = 'projects'>
                 <h2>Projects</h2>
-                <p>Some of the things I've worked on</p>
+                <p>Some things I've worked on</p>
                 <br/>
 
                 <Project {...assetPlus} />
 
                 <Project {...pyroBot3} />
-
-                <Project {...projectThree} />
 
                 <Project {...Reversi} />
 
@@ -174,21 +185,61 @@
     }
 
     .projects{
-        grid-area: projects
-    
+        grid-area: projects;
     }
 
     .buffer {
+        grid-area: buffer;
         border-right: none;
         border-left: none;
     }
 
     .header {
+        grid-area: header;
         border-right: none;
     }
 
     .links {
+        grid-area: links;
         border-left: none;
+    }
+    
+    .about {
+        grid-area: about;
+    }
+
+    .work {
+        grid-area: work;
+    }
+
+    .education{
+        grid-area: education;
+    }
+
+    @media (max-width: 900px){
+        .container {
+            grid-template-areas:
+                'header header links'
+                'work work work'
+                'education education education'
+                'projects projects projects'
+                'about about about';
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .header {
+          border: 1px solid black;
+          border-right: none;
+        }
+      
+        .buffer{
+            display: none;
+        }
+
+        .links {
+            border-left: none;
+        }
     }
 
 </style>
