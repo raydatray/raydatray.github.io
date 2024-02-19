@@ -74,7 +74,7 @@
 
                 <span>May 2023 - August 2023</span>
 
-                <p>Intern in Technology and Innovation @ <span>Will Solutions</span>, where I created internal development tools in TypeScript </p>
+                <p>Intern in Technology and Innovation @ <span>Will Solutions</span>, where I created internal tools in TypeScript and the MS Power Platform</p>
 
                 <br/>
                 <p>Looking for a <span>Summer 2024</span> internship</p>
